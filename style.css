@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.body{
+    background:url("bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;/*shifts the snake to left for board to come properly*/
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+#board{
+    background: linear-gradient(rgb(182, 235, 182),rgb(222, 222, 155));/*mix two colors*/
+    width:90vmin;/*vh and vw me se jo chota hoga wo vmin hoga and similarly other vmax*/
+    height: 92vmin;
+    border:2px solid black;
+    display: grid;
+    grid-template-rows:repeat(18,1fr);/*width of each grid 1fr and has 18 rows */
+    grid-template-columns: repeat(18,1fr);
+
+}
+
+.head{
+    background-color: red;
+
+}
+.snake{
+    background-color: purple;
+}
+.food{
+    background-color: yellow;
+}
