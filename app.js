@@ -56,7 +56,7 @@ function gameEngine(){
 
 
     //Part 2:Display the snake and food
-    //Display the snake
+    //Display the snake and increase its size
     board.innerHTML="";
     snakeArr.forEach((e,index)=>{
         snakeElement=document.createElement('div');
@@ -79,17 +79,6 @@ function gameEngine(){
     foodElement.classList.add('food');
     board.appendChild(foodElement);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 //Main logic 
 window.requestAnimationFrame(main);
